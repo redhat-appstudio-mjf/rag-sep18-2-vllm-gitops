@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: rag-sep18-2-vllm-database-config
+data:
+  VECTORDB_HOST: "rag-sep18-2-vllm-database"
+  VECTORDB_PORT: "8000"

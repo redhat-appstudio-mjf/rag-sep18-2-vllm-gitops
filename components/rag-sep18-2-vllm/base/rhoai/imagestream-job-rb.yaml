@@ -1,0 +1,13 @@
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name:  rag-sep18-2-vllm-imagestream-job-rolebinding
+  namespace: redhat-ods-applications
+subjects:
+  - kind: ServiceAccount
+    name: rag-sep18-2-vllm-dsp-job
+    namespace: rag-sep18-2-vllm
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: rag-sep18-2-vllm-imagestream-job-role
